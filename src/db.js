@@ -43,8 +43,11 @@ const capsEntries = entries.map((entry) => [
 sequelize.models = Object.fromEntries(capsEntries);
 console.log(sequelize.models);
 // todo relations
-const {
+const { Admin, Users
 } = sequelize.models;
+
+Users.hasMany(Admin);
+Admin.belongsTo(Users);
 
 module.exports = {
   ...sequelize.models,

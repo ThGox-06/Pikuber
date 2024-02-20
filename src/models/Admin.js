@@ -11,9 +11,6 @@ module.exports = (sequelize) => {
       creationDate: {
         type: DataTypes.DATEONLY,
       },
-      adminCreator: {
-        type: DataTypes.STRING,
-      },
       profile: {
         type: DataTypes.JSON,
       },
