@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
   sequelize.define(
-    'pilotTransactionHistory',
+    'pilotTransactionHistories',
     {
       active: {
         type: DataTypes.BOOLEAN,
@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
     },
     {
       timestamps: false,
-      tableName: 'pilotTransactionsHistory',
+      tableName: 'pilotTransactionsHistories',
     },
   );
 };

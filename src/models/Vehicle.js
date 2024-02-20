@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
   sequelize.define(
-    'vehicle',
+    'vehicles',
     {
       active: {
         type: DataTypes.BOOLEAN,
