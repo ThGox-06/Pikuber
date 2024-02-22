@@ -1,7 +1,9 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 require('dotenv').config();
+const { PatchCustomDomainsByIdRequestTlsPolicyEnum } = require('auth0');
 const fs = require('fs');
+const { User } = require('mercadopago');
 const path = require('path');
 const { Sequelize } = require('sequelize');
 
@@ -43,11 +45,74 @@ const capsEntries = entries.map((entry) => [
 sequelize.models = Object.fromEntries(capsEntries);
 console.log(sequelize.models);
 // todo relations
-const { Admin, Users
+const { 
+  Admin,
+  BaseRates, 
+  Cities,
+  Countries,
+  Fleets,
+  InternationalCodes,
+  Notifications,
+  Pilots,
+  PilotTransactionHistory,
+  Services,
+  States,
+  Units,
+  Users,
+  Vehicles, 
+  VehicleFeatures,
 } = sequelize.models;
 
+// ADMIN
 Users.hasMany(Admin);
 Admin.belongsTo(Users);
+// BASE RATE
+Vehicles.hasMany(BaseRates);
+BaseRates.belongsTo(Vehicles);
+// CITY
+States.hasMany(Cities);
+Cities.belongsTo(States);
+// COUNTRY (has no connections)
+// FLEET
+Pilots.hasMany(Fleets);
+Fleets.belongsTo(Pilots);
+VehicleFeatures.hasMany(Fleets);
+Fleets.belongsTo(VehicleFeatures);
+// INTERNATIONAL CODE
+Countries.hasMany(InternationalCodes);
+InternationalCodes.belongsTo(Countries);
+// NOTIFICATION
+Users.hasMany(Notifications);
+Notifications.belongsTo(Users);
+Admin.hasMany(Notifications);
+Notifications.belongsTo(Admin);
+// PILOT
+Users.hasMany(Pilots);
+Pilots.belongsTo(Users);
+// PILOT TRANSACTION HISTORY
+Pilots.hasMany(PilotTransactionHistory);
+PilotTransactionHistory.belongsTo(Pilots);
+// SERVICE
+Users.hasMany(Services);
+Services.belongsTo(Users);
+Pilots.hasMany(Services);
+Services.belongsTo(Pilots);
+Fleets.hasMany(Services);
+Services.belongsTo(Fleets);
+Cities.hasMany(Services);
+Services.belongsTo(Cities);
+Units.hasMany(Services);
+Services.belongsTo(Units);
+// STATE
+Countries.hasMany(States);
+States.belongsTo(Countries);
+// UNIT (has no connections)
+// USER
+Cities.hasMany(Users);
+Users.belongsTo(Cities);
+// VEHICLE (has no connections)
+Vehicles.hasMany(VehicleFeatures);
+VehicleFeatures.belongsTo(Vehicles);
 
 module.exports = {
   ...sequelize.models,
