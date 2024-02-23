@@ -110,9 +110,14 @@ States.belongsTo(Countries);
 // USER
 Cities.hasMany(Users);
 Users.belongsTo(Cities);
+InternationalCodes.hasMany(Users);
+Users.belongsTo(InternationalCodes);
 // VEHICLE (has no connections)
+// VEHICLE FEATURES
 Vehicles.hasMany(VehicleFeatures);
 VehicleFeatures.belongsTo(Vehicles);
+Units.hasMany(VehicleFeatures);
+VehicleFeatures.belongsTo(Units);
 
 module.exports = {
   ...sequelize.models,
