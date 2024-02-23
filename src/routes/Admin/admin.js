@@ -70,7 +70,6 @@ admin.get('/allAdmins', async (req, res) => {
 })
 
 //Read admin by id
-// Read all admins
 admin.get('/adminById/:id', async (req, res) => {
   try {
     const { id } = req.params;
