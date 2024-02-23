@@ -13,7 +13,7 @@ module.exports = (sequelize) => {
         type: DataTypes.DATEONLY,
       },
       profile: {
-        type: DataTypes.JSON,
+        type: DataTypes.STRING,
       },
     },
     {
