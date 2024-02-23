@@ -22,10 +22,13 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
       },
       height: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
       },
       width: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
+      },
+      length: {
+        type: DataTypes.FLOAT,
       },
       axes: {
         type: DataTypes.INTEGER,
@@ -40,7 +43,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
       model: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
       licensePlate: {
         type: DataTypes.STRING,

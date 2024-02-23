@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
       },
-      typeVehicle: {
+      vehicleType: {
         type: DataTypes.STRING,
       },
     },

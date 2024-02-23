@@ -24,7 +24,7 @@ module.exports = (sequelize) => {
       pilotAssigned: {
         type: DataTypes.BOOLEAN,
       },
-      programed: {
+      programmed: {
         type: DataTypes.BOOLEAN,
       },
       motoType: {

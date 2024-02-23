@@ -26,10 +26,10 @@ module.exports = (sequelize) => {
         type: DataTypes.DATEONLY,
       },
       licenseNumber: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
       pilotNumber: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
     },
     {

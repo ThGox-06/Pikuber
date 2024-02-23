@@ -25,7 +25,7 @@ module.exports = (sequelize) => {
         type: DataTypes.DATEONLY,
       },
       documentNumber: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
       documentImage: {
         type: DataTypes.STRING,
@@ -37,10 +37,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
       gender: {
-        type: DataTypes.STRING,
+        type: DataTypes.ENUM('male', 'female', 'others'),
       },
       phone: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
       phoneWhatsapp: {
         type: DataTypes.STRING,
