@@ -30,13 +30,34 @@
 					"response": []
 				},
 				{
+					"name": "Traer Administradores por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/admin/adminById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"adminById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Añadir administrador",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"creationDate\": \"27/4/2024\",\r\n    \"profile\": \"developer\"\r\n    // \"userId\": 1\r\n}",
+							"raw": "{\r\n    \"creationDate\": \"2024-2-23\",\r\n    \"profile\": \"developer\",\r\n    \"userId\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -53,6 +74,66 @@
 							"path": [
 								"admin",
 								"newAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"profile\": \"developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/updateProfile/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"updateProfile",
+								"1"
 							]
 						}
 					},
@@ -144,15 +225,240 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/state/allStates",
+							"raw": "http://localhost:3001/country/allCountries",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3001",
 							"path": [
-								"state",
-								"allStates"
+								"country",
+								"allCountries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "International Code",
+			"item": [
+				{
+					"name": "Traer Códigos Internacionales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/internationalCode/allInternationalCodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"internationalCode",
+								"allInternationalCodes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "Traer Notificaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/notification/allNotifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"notification",
+								"allNotifications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pilot",
+			"item": [
+				{
+					"name": "Traer Pilotos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/pilot/allPilots",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilot",
+								"allPilots"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PilotTransactionHistory",
+			"item": [
+				{
+					"name": "Traer Historial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/pilotTransactionHistory/allPilotTransactionHistory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilotTransactionHistory",
+								"allPilotTransactionHistory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"item": [
+				{
+					"name": "Traer Servicios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/service/allServices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service",
+								"allServices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unit",
+			"item": [
+				{
+					"name": "Traer Unidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/unit/allUnits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"unit",
+								"allUnits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Traer Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/user/allUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"allUsers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "Traer Vehículos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/vehicle/allVehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"vehicle",
+								"allVehicles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle Feature",
+			"item": [
+				{
+					"name": "Traer Características de los Vehículos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/vehicleFeatures/allVehicleFeatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"vehicleFeatures",
+								"allVehicleFeatures"
 							]
 						}
 					},
