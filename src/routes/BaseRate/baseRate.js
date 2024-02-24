@@ -22,7 +22,6 @@ baseRates.post('/newBaseRate', async (req, res) => {
       observation,
       vehicleId,
     } = req.body;
-    // Checking if an base rate with the same userId already exists
     const [acctionCreated, created] = await BaseRates.findOrCreate({
       where: {
         typeRate,
@@ -35,7 +34,6 @@ baseRates.post('/newBaseRate', async (req, res) => {
         vehicleId,
       },
     });
-    // Tests if an base rate was created or already exist with the same userId
     if (created) {
       res.status(200).send('Base Rate created');
     } else {
