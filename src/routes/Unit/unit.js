@@ -107,7 +107,7 @@ units.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Toggle active
+// Change Data (unit, details)
 units.put('/changeUnitOrDetail/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -123,7 +123,7 @@ units.put('/changeUnitOrDetail/:id', async (req, res) => {
         unit,
         details,
       });
-      res.status(200).send('Information changed');
+      res.status(200).send('Data Changed');
     } else {
       res.status(200).send('ID not found');
     }

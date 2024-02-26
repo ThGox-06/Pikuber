@@ -20,7 +20,6 @@ advertisements.post('/newAdvertisement', async (req, res) => {
       advertisementName,
       companyName,
     } = req.body;
-    // Checking if an admin with the same userId already exists
     const [acctionCreated, created] = await Advertisements.findOrCreate({
       where: {
         advertisementName,
@@ -30,7 +29,6 @@ advertisements.post('/newAdvertisement', async (req, res) => {
         companyName,
       },
     });
-    // Tests if an admin was created or already exist with the same userId
     if (created) {
       res.status(200).send('Advertisement created');
     } else {
@@ -63,7 +61,7 @@ advertisements.get('/allAdvertisement', async (req, res) => {
   }
 })
 
-// Read Advertisements by ID
+// Read Advertisements by id
 advertisements.get('/advertisementsById/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -85,7 +83,7 @@ advertisements.get('/advertisementsById/:id', async (req, res) => {
   }
 })
 
-// Toggle admin
+// Toggle Active
 advertisements.put('/toggleActive/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -109,7 +107,7 @@ advertisements.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change Data
+// Change Data (advertisementName, companyName)
 advertisements.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;

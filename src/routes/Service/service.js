@@ -129,7 +129,7 @@ services.get('/allServices', async (req, res) => {
   }
 })
 
-// Read all Services
+// Read services by id
 services.get('/servicesById/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -203,7 +203,7 @@ services.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change data
+// Change data (pilotId, fleetId, cityId, description, startLocation, endLocation, creationDate, pilotAssigned, programmed, motoType, ratingUser, ratingPilot, userPosition, pilotPosition userPreferences, pilotPreferences, realTime, cancel, error, success)
 services.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;

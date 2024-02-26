@@ -143,7 +143,7 @@ fleets.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change Data
+// Change Data (pilotId, vehicleFeatureId, discount, recharge)
 fleets.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;

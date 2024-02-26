@@ -149,7 +149,7 @@ notifications.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change Data
+// Change Data (userId, public, title, value)
 notifications.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;

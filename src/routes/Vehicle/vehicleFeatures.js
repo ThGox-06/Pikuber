@@ -66,7 +66,7 @@ vehicleFeatures.post('/newVehicleFeatures', async (req, res) => {
   } 
 });
 
-// Read all
+// Read all Vehicle Features
 vehicleFeatures.get('/allVehicleFeatures', async (req, res) => {
   try {
     const ad = await VehicleFeatures.findAll({
@@ -138,11 +138,11 @@ vehicleFeatures.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change Data
+// Change Data (vehicleWeight, peopleCapacity, volume, packagingWeight, axes, rate, brand, color, model, licensePlate)
 vehicleFeatures.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const { vehicleWeight, peopleCapacity, volume, packagingWeight, axes, rate, brand, color, model, licensePlate} = req.body;
+    const { vehicleWeight, peopleCapacity, volume, packagingWeight, axes, rate, brand, color, model, licensePlate } = req.body;
 
     const vehicleFeatureFinded = await VehicleFeatures.findOne({
       where: {

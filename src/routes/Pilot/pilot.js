@@ -14,7 +14,7 @@ pilots.use(
   }),
 );
 
-// Create a new State
+// Create a new Pilot
 pilots.post('/newPilot', async (req, res) => {
   try {
     // Destructuring data from request body
@@ -135,7 +135,7 @@ pilots.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change data
+// Change data (userId, activePilot, balance, inscription, licenseExp, licenseNumber, pilotNumber)
 pilots.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -156,7 +156,7 @@ pilots.put('/changeData/:id', async (req, res) => {
         licenseNumber, 
         pilotNumber,
       });
-      res.status(200).send('Changed data');
+      res.status(200).send('Data Changed');
     } else {
       res.status(200).send('ID not found');
     }

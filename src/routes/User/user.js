@@ -153,7 +153,7 @@ users.put('/toggleActive/:id', async (req, res) => {
   }
 });
 
-// Change Data
+// Change Data (cityId, internationalCodeId, avatar, documentImage, email, gender, phone, phoneWhatsapp, verifiedUser)
 users.put('/changeData/:id', async (req, res) => {
   try {
     const { id } = req.params;

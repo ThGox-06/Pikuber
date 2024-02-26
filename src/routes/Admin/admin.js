@@ -21,7 +21,6 @@ admin.post('/newAdmin', async (req, res) => {
       profile,
       userId,
     } = req.body;
-    // Checking if an admin with the same userId already exists
     const [acctionCreated, created] = await Admin.findOrCreate({
       where: {
         userId,
@@ -32,7 +31,6 @@ admin.post('/newAdmin', async (req, res) => {
         userId,
       },
     });
-    // Tests if an admin was created or already exist with the same userId
     if (created) {
       res.status(200).send('Admin created');
     } else {
@@ -95,7 +93,7 @@ admin.get('/adminById/:id', async (req, res) => {
   }
 })
 
-// Toggle admin
+// Toggle Active
 admin.put('/toggleActive/:id', async (req, res) => {
   try {
     const { id } = req.params;

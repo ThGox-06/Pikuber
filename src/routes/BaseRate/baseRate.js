@@ -69,7 +69,7 @@ baseRates.get('/allBaseRates', async (req, res) => {
   }
 })
 
-//Read baseRates by id
+//Read Base Rates by id
 baseRates.get('/baseRatesById/:id', async (req, res) => {
   try {
     const { id } = req.params;
