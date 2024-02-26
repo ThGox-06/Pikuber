@@ -17,7 +17,6 @@ vehicleFeatures.post('/newVehicleFeatures', async (req, res) => {
   try {
     // Destructuring data from request body
     const {
-      id,
       vehicleId,
       unitId,
       vehicleWeight,
@@ -39,7 +38,6 @@ vehicleFeatures.post('/newVehicleFeatures', async (req, res) => {
         licensePlate,
       },
       defaults: {
-        id,
         vehicleId,
         unitId,
         vehicleWeight,

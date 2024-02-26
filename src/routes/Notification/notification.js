@@ -2,7 +2,8 @@ const notifications = require('express').Router();
 const express = require('express');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
-const { Notifications, Users } = require('../../db');
+const { Notifications, Users, Admin } = require('../../db');
+const { UUID } = require('sequelize');
 
 notifications.use(express.json());
 notifications.use(cors());
@@ -58,11 +59,23 @@ notifications.get('/allNotifications', async (req, res) => {
         active: true
       },
       attributes: ['id', 'userId', 'adminId', 'date', 'public', 'title', 'value'],
-      include: [{
-        model: Users,
-        attributes: ['name'],
-      }]
-    })
+      include: [
+        {
+          model: Users,
+          attributes: ['name'],
+        },
+        {
+          model: Admin,
+          attributes: ['userId'],
+          include: [
+            {
+              model: Users,
+              attributes: ['name'],
+            }
+          ]
+        }
+      ]
+    });
 
     if (ad.length > 0) {
       res.status(201).json(ad);
@@ -84,11 +97,23 @@ notifications.get('/notificationsById/:id', async (req, res) => {
         id: parseInt(id, 10),
       },
       attributes: ['id', 'userId', 'adminId', 'date', 'public', 'title', 'value'],
-      include: [{
-        model: Users,
-        attributes: ['name'],
-      }]
-    })
+      include: [
+        {
+          model: Users,
+          attributes: ['name'],
+        },
+        {
+          model: Admin,
+          attributes: ['userId'],
+          include: [
+            {
+              model: Users,
+              attributes: ['name'],
+            }
+          ]
+        }
+      ]
+    });
 
     if (ad.length > 0) {
       res.status(201).json(ad);

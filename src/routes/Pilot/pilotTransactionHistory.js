@@ -2,7 +2,7 @@ const pilotTransactionHistory = require('express').Router();
 const express = require('express');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
-const { PilotTransactionHistory, Pilots } = require('../../db');
+const { PilotTransactionHistory, Pilots, Users } = require('../../db');
 
 pilotTransactionHistory.use(express.json());
 pilotTransactionHistory.use(cors());
@@ -52,7 +52,19 @@ pilotTransactionHistory.get('/allTransactionHistory', async (req, res) => {
       where: {
         active: true
       },
-      attributes: ['id', 'pilotId', 'value', 'date', 'ticket']
+      attributes: ['id', 'pilotId', 'value', 'date', 'ticket'],
+      include: [
+        {
+          model: Pilots,
+          attributes: ['userId'],
+          include: [
+            {
+              model: Users,
+              attributes: ['name'],
+            }
+          ]
+        }
+      ]
     })
 
     if (ad.length > 0) {
@@ -74,7 +86,19 @@ pilotTransactionHistory.get('/transactionHistoryById/:id', async (req, res) => {
         active: true,
         id: parseInt(id, 10),
       },
-      attributes: ['id', 'pilotId', 'value', 'date', 'ticket']
+      attributes: ['id', 'pilotId', 'value', 'date', 'ticket'],
+      include: [
+        {
+          model: Pilots,
+          attributes: ['userId'],
+          include: [
+            {
+              model: Users,
+              attributes: ['name'],
+            }
+          ]
+        }
+      ]
     })
 
     if (ad.length > 0) {
