@@ -110,7 +110,7 @@
 					"response": []
 				},
 				{
-					"name": "Alternar Profile",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -133,6 +133,141 @@
 							"path": [
 								"admin",
 								"updateProfile",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Advertisements",
+			"item": [
+				{
+					"name": "Traer Anuncios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/advertisements/allAdvertisement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"advertisements",
+								"allAdvertisement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traer Anuncios por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/advertisements/advertisementsById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"advertisements",
+								"advertisementsById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Anuncio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"advertisementName\": \"asd\",\r\n    \"companyName\": \"dsa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/advertisements/newAdvertisement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"advertisements",
+								"newAdvertisement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/advertisements/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"advertisements",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar Datos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"advertisementName\": \"waos\",\r\n    \"companyName\": \"soaw\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/advertisements/changeData/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"advertisements",
+								"changeData",
 								"1"
 							]
 						}
@@ -245,7 +380,7 @@
 					"response": []
 				},
 				{
-					"name": "Alternar Precio",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -380,7 +515,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar nombre",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -515,7 +650,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar nombre",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -650,7 +785,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar nombre",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -673,6 +808,141 @@
 							"path": [
 								"country",
 								"changeName",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fleets",
+			"item": [
+				{
+					"name": "Traer Flotas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/fleet/allFleets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"fleet",
+								"allFleets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traer Flotas por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/fleet/fleetsById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"fleet",
+								"fleetsById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Flota",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pilotId\": null,\r\n    \"vehicleFeatureId\": null,\r\n    \"discount\": null,\r\n    \"recharge\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/fleet/newFleet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"fleet",
+								"newFleet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/fleet/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"fleet",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar Datos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pilotId\": 2,\r\n    \"vehicleFeatureId\": 2,\r\n    \"discount\": null,\r\n    \"recharge\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/fleet/changeData/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"fleet",
+								"changeData",
 								"2"
 							]
 						}
@@ -726,7 +996,7 @@
 					"response": []
 				},
 				{
-					"name": "Crear Códigos Internacionales",
+					"name": "Añadir Código Internacional",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -785,7 +1055,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar Código Internacional",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -861,7 +1131,7 @@
 					"response": []
 				},
 				{
-					"name": "Traer Notificaciones por Id Copy",
+					"name": "Añadir Notificación",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -920,7 +1190,7 @@
 					"response": []
 				},
 				{
-					"name": "Alternar Active Copy",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -955,7 +1225,7 @@
 			"name": "Pilot",
 			"item": [
 				{
-					"name": "Traer Pilotos",
+					"name": "Traer todos los Pilotos",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -969,6 +1239,116 @@
 							"path": [
 								"pilot",
 								"allPilots"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traer Pilotos por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/pilot/pilotById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilot",
+								"pilotById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Piloto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"userId\": 2,\r\n      \"creationDate\": \"2024-02-25\",\r\n      \"activePilot\": false,\r\n      \"balance\": 20000,\r\n      \"inscription\": null,\r\n      \"licenseExp\": null,\r\n      \"licenseNumber\": 12345,\r\n      \"pilotNumber\": 135547789987\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/pilot/newPilot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilot",
+								"newPilot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/pilot/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilot",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar Datos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"balance\": 21000,\r\n \"activePilot\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/pilot/changeData/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"pilot",
+								"changeData",
+								"1"
 							]
 						}
 					},
@@ -1021,7 +1401,7 @@
 					"response": []
 				},
 				{
-					"name": "Traer Historial por Id Copy",
+					"name": "Crear Historial",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1133,6 +1513,116 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Traer Servicios por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/service/servicesById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service",
+								"servicesById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"pilotId\": 2,\r\n    \"fleetId\": null,\r\n    \"cityId\": 1,\r\n    \"unitId\": null,\r\n    \"description\": \"asdadasd\",\r\n    \"startLocation\": null,\r\n    \"endLocation\": null,\r\n    \"creationDate\": null,\r\n    \"pilotAssigned\": true,\r\n    \"programmed\": null,\r\n    \"motoType\": null,\r\n    \"ratingUser\": null,\r\n    \"ratingPilot\": null,\r\n    \"userPosition\": null,\r\n    \"pilotPosition\": null,\r\n    \"userPreferences\": null,\r\n    \"pilotPreferences\": null,\r\n    \"realTime\": null,\r\n    \"cancel\": null,\r\n    \"error\": null,\r\n    \"success\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/service/newService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service",
+								"newService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/service/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar datos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"success\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/service/changeData/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service",
+								"changeData",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -1181,7 +1671,7 @@
 					"response": []
 				},
 				{
-					"name": "Crear Unidades",
+					"name": "Añadir Unidad",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1240,7 +1730,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar Unidad o Detalles",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1293,6 +1783,116 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Traer Usuarios por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/user/usersById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"usersById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityId\": 2,\r\n    \"internationalCodeId\": 1,\r\n    \"creationDate\": \"2024-02-25\",\r\n    \"avatar\": null,\r\n    \"name\": \"ivan\",\r\n    \"lastname\": \"parra\",\r\n    \"birthday\": \"2001-01-01\",\r\n    \"documentNumber\": 47745245,\r\n    \"documentImage\": null,\r\n    \"documentType\": \"dni\",\r\n    \"email\": \"asdfasdf@gmail.com\",\r\n    \"gender\": \"male\",\r\n    \"phone\": \"911256623\",\r\n    \"phoneWhatsapp\": \"911256623\",\r\n    \"verifiedUser\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/user/newUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"newUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alternar Active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/user/toggleActive/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"toggleActive",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar Datos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityId\": 2,\r\n    \"documentNumber\": 47745245,\r\n    \"documentType\": \"dni\",\r\n    \"verifiedUser\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/user/changeData/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"changeData",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -1341,7 +1941,7 @@
 					"response": []
 				},
 				{
-					"name": "Crear Vehículos",
+					"name": "Añadir Vehículo",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1400,7 +2000,7 @@
 					"response": []
 				},
 				{
-					"name": "Cambiar Tipo de Vehículo",
+					"name": "Cambiar Datos",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1476,7 +2076,7 @@
 					"response": []
 				},
 				{
-					"name": "Traer Características de los Vehículos por Id Copy",
+					"name": "Añadir Características de Vehículo",
 					"request": {
 						"method": "POST",
 						"header": [],
