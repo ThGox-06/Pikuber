@@ -47,6 +47,7 @@ console.log(sequelize.models);
 // todo relations
 const { 
   Admin,
+  Advertisements,
   BaseRates, 
   Cities,
   Countries,
@@ -66,6 +67,7 @@ const {
 // ADMIN
 Users.hasMany(Admin);
 Admin.belongsTo(Users);
+// ADVERTISEMENTS (has no connections)
 // BASE RATE
 Vehicles.hasMany(BaseRates);
 BaseRates.belongsTo(Vehicles);

@@ -2,6 +2,7 @@ const { Router } = require('express');
 const cors = require('cors');
 
 const adminRouter = require('./Admin');
+const advertisementRoute = require('./Advertisement');
 const baseRateRouter = require('./BaseRate');
 const cityRouter = require('./City');
 const stateRouter = require('./State');
@@ -22,6 +23,7 @@ const router = Router();
 router.use(cors());
 
 router.use('/admin', adminRouter);
+router.use('/advertisements', advertisementRoute);
 router.use('/baseRates', baseRateRouter);
 router.use('/city', cityRouter);
 router.use('/state', stateRouter);
