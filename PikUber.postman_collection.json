@@ -15,12 +15,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/admin/allAdmins",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/admin/allAdmins",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"admin",
 								"allAdmins"
@@ -35,12 +37,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/admin/adminById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/admin/adminById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"admin",
 								"adminById",
@@ -57,7 +61,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"creationDate\": \"2024-2-23\",\r\n    \"profile\": \"developer\",\r\n    \"userId\": 2\r\n}",
+							"raw": "{\r\n    \"creationDate\": null,\r\n    \"profile\": null,\r\n    \"userId\": null\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -65,12 +69,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/admin/newAdmin",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/admin/newAdmin",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"admin",
 								"newAdmin"
@@ -86,7 +92,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"active\": \"true\"\r\n}",
+							"raw": "{\r\n    \"active\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -94,12 +100,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/admin/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/admin/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"admin",
 								"toggleActive",
@@ -116,7 +124,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"profile\": \"profile\"\r\n}",
+							"raw": "{\r\n    \"profile\": \"developer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -150,12 +158,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/advertisements/allAdvertisement",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/advertisements/allAdvertisement",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"advertisements",
 								"allAdvertisement"
@@ -170,12 +180,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/advertisements/advertisementsById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/advertisements/advertisementsById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"advertisements",
 								"advertisementsById",
@@ -200,12 +212,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/advertisements/newAdvertisement",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/advertisements/newAdvertisement",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"advertisements",
 								"newAdvertisement"
@@ -229,12 +243,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/advertisements/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/advertisements/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"advertisements",
 								"toggleActive",
@@ -259,12 +275,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/advertisements/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/advertisements/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"advertisements",
 								"changeData",
@@ -285,12 +303,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/baseRates/allBaseRates",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/baseRates/allBaseRates",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"baseRates",
 								"allBaseRates"
@@ -305,12 +325,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/baseRates/baseRatesById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/baseRates/baseRatesById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"baseRates",
 								"baseRatesById",
@@ -335,12 +357,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/baseRates/newBaseRate",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/baseRates/newBaseRate",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"baseRates",
 								"newBaseRate"
@@ -364,12 +388,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/baseRates/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/baseRates/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"baseRates",
 								"toggleActive",
@@ -394,12 +420,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/baseRates/updatePrice/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/baseRates/updatePrice/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"baseRates",
 								"updatePrice",
@@ -420,12 +448,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/city/allCities",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/city/allCities",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"city",
 								"allCities"
@@ -440,12 +470,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/city/cityById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/city/cityById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"city",
 								"cityById",
@@ -470,12 +502,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/city/newCity",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/city/newCity",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"city",
 								"newCity"
@@ -499,12 +533,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/city/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/city/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"city",
 								"toggleActive",
@@ -529,12 +565,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/city/changeName/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/city/changeName/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"city",
 								"changeName",
@@ -555,12 +593,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/state/allStates",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/state/allStates",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"state",
 								"allStates"
@@ -575,12 +615,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/state/stateById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/state/stateById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"state",
 								"stateById",
@@ -605,12 +647,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/state/newState",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/state/newState",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"state",
 								"newState"
@@ -634,12 +678,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/state/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/state/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"state",
 								"toggleActive",
@@ -664,12 +710,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/state/changeName/2",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/state/changeName/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"state",
 								"changeName",
@@ -690,12 +738,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/country/allCountries",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/country/allCountries",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"country",
 								"allCountries"
@@ -710,12 +760,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/country/countriesById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/country/countriesById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"country",
 								"countriesById",
@@ -740,12 +792,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/country/newCountry",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/country/newCountry",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"country",
 								"newCountry"
@@ -769,12 +823,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/country/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/country/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"country",
 								"toggleActive",
@@ -799,12 +855,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/country/changeName/2",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/country/changeName/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"country",
 								"changeName",
@@ -825,12 +883,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/fleet/allFleets",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/fleet/allFleets",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"fleet",
 								"allFleets"
@@ -845,12 +905,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/fleet/fleetsById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/fleet/fleetsById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"fleet",
 								"fleetsById",
@@ -875,12 +937,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/fleet/newFleet",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/fleet/newFleet",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"fleet",
 								"newFleet"
@@ -904,12 +968,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/fleet/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/fleet/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"fleet",
 								"toggleActive",
@@ -934,12 +1000,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/fleet/changeData/2",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/fleet/changeData/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"fleet",
 								"changeData",
@@ -960,12 +1028,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/internationalCode/allIntCodes",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/internationalCode/allIntCodes",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"internationalCode",
 								"allIntCodes"
@@ -980,12 +1050,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/internationalCode/intCodeById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/internationalCode/intCodeById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"internationalCode",
 								"intCodeById",
@@ -1010,12 +1082,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/internationalCode/newIntCode",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/internationalCode/newIntCode",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"internationalCode",
 								"newIntCode"
@@ -1039,12 +1113,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/internationalCode/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/internationalCode/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"internationalCode",
 								"toggleActive",
@@ -1069,12 +1145,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/internationalCode/changeCode/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/internationalCode/changeCode/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"internationalCode",
 								"changeCode",
@@ -1095,12 +1173,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/notification/allNotifications",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/notification/allNotifications",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"notification",
 								"allNotifications"
@@ -1115,12 +1195,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/notification/notificationsById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/notification/notificationsById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"notification",
 								"notificationsById",
@@ -1145,12 +1227,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/notification/newNotification",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/notification/newNotification",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"notification",
 								"newNotification"
@@ -1174,12 +1258,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/notification/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/notification/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"notification",
 								"toggleActive",
@@ -1204,12 +1290,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/notification/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/notification/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"notification",
 								"changeData",
@@ -1230,12 +1318,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/pilot/allPilots",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilot/allPilots",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilot",
 								"allPilots"
@@ -1250,12 +1340,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/pilot/pilotById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilot/pilotById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilot",
 								"pilotById",
@@ -1280,12 +1372,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilot/newPilot",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilot/newPilot",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilot",
 								"newPilot"
@@ -1309,12 +1403,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilot/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilot/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilot",
 								"toggleActive",
@@ -1339,12 +1435,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilot/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilot/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilot",
 								"changeData",
@@ -1365,12 +1463,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/pilotTransactionHistory/allTransactionHistory",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilotTransactionHistory/allTransactionHistory",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilotTransactionHistory",
 								"allTransactionHistory"
@@ -1385,12 +1485,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/pilotTransactionHistory/transactionHistoryById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilotTransactionHistory/transactionHistoryById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilotTransactionHistory",
 								"transactionHistoryById",
@@ -1415,12 +1517,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilotTransactionHistory/newTransaction",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilotTransactionHistory/newTransaction",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilotTransactionHistory",
 								"newTransaction"
@@ -1444,12 +1548,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilotTransactionHistory/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilotTransactionHistory/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilotTransactionHistory",
 								"toggleActive",
@@ -1474,12 +1580,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/pilotTransactionHistory/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/pilotTransactionHistory/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"pilotTransactionHistory",
 								"changeData",
@@ -1500,12 +1608,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/service/allServices",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/service/allServices",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"service",
 								"allServices"
@@ -1520,12 +1630,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/service/servicesById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/service/servicesById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"service",
 								"servicesById",
@@ -1550,12 +1662,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/service/newService",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/service/newService",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"service",
 								"newService"
@@ -1579,12 +1693,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/service/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/service/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"service",
 								"toggleActive",
@@ -1609,12 +1725,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/service/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/service/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"service",
 								"changeData",
@@ -1635,12 +1753,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/unit/allUnits",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/unit/allUnits",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"unit",
 								"allUnits"
@@ -1655,12 +1775,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/unit/unitById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/unit/unitById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"unit",
 								"unitById",
@@ -1685,12 +1807,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/unit/newUnit",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/unit/newUnit",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"unit",
 								"newUnit"
@@ -1714,12 +1838,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/unit/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/unit/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"unit",
 								"toggleActive",
@@ -1744,12 +1870,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/unit/changeUnitOrDetail/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/unit/changeUnitOrDetail/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"unit",
 								"changeUnitOrDetail",
@@ -1770,12 +1898,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/user/allUsers",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/user/allUsers",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"user",
 								"allUsers"
@@ -1790,12 +1920,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/user/usersById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/user/usersById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"user",
 								"usersById",
@@ -1812,7 +1944,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"cityId\": 2,\r\n    \"internationalCodeId\": 1,\r\n    \"creationDate\": \"2024-02-25\",\r\n    \"avatar\": null,\r\n    \"name\": \"ivan\",\r\n    \"lastname\": \"parra\",\r\n    \"birthday\": \"2001-01-01\",\r\n    \"documentNumber\": 47745245,\r\n    \"documentImage\": null,\r\n    \"documentType\": \"dni\",\r\n    \"email\": \"asdfasdf@gmail.com\",\r\n    \"gender\": \"male\",\r\n    \"phone\": \"911256623\",\r\n    \"phoneWhatsapp\": \"911256623\",\r\n    \"verifiedUser\": false\r\n}",
+							"raw": "{\r\n    \"cityId\": 2,\r\n    \"internationalCodeId\": 1,\r\n    \"creationDate\": \"2024-02-25\",\r\n    \"avatar\": null,\r\n    \"name\": \"ivan\",\r\n    \"lastname\": \"parra\",\r\n    \"birthday\": \"2001-01-01\",\r\n    \"documentNumber\": 47745245,\r\n    \"documentImage\": null,\r\n    \"documentType\": \"dni\",\r\n    \"email\": \"asdfasdf@gmail.com\",\r\n    \"password\": \"asdaf\",\r\n    \"gender\": \"male\",\r\n    \"phone\": \"911256623\",\r\n    \"phoneWhatsapp\": \"911256623\",\r\n    \"verifiedUser\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1820,12 +1952,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/user/newUser",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/user/newUser",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"user",
 								"newUser"
@@ -1849,12 +1983,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/user/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/user/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"user",
 								"toggleActive",
@@ -1871,7 +2007,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"cityId\": 2,\r\n    \"documentNumber\": 47745245,\r\n    \"documentType\": \"dni\",\r\n    \"verifiedUser\": true\r\n}",
+							"raw": "{\r\n    \"cityId\": 2,\r\n    \"documentNumber\": 47745245,\r\n    \"documentType\": \"dni\",\r\n    \"verifiedUser\": true,\r\n    \"password\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1879,16 +2015,18 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/user/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/user/changeData/4",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"user",
 								"changeData",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -1905,12 +2043,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/vehicle/allVehicles",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicle/allVehicles",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicle",
 								"allVehicles"
@@ -1925,12 +2065,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/vehicle/vehiclesById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicle/vehiclesById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicle",
 								"vehiclesById",
@@ -1955,12 +2097,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicle/newVehicle",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicle/newVehicle",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicle",
 								"newVehicle"
@@ -1984,12 +2128,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicle/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicle/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicle",
 								"toggleActive",
@@ -2014,12 +2160,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicle/changeVehicleType/3",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicle/changeVehicleType/3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicle",
 								"changeVehicleType",
@@ -2040,12 +2188,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/vehicleFeatures/allVehicleFeatures",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicleFeatures/allVehicleFeatures",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicleFeatures",
 								"allVehicleFeatures"
@@ -2060,12 +2210,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/vehicleFeatures/vehicleFeatureById/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicleFeatures/vehicleFeatureById/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicleFeatures",
 								"vehicleFeatureById",
@@ -2090,12 +2242,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicleFeatures/newVehicleFeatures",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicleFeatures/newVehicleFeatures",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicleFeatures",
 								"newVehicleFeatures"
@@ -2119,12 +2273,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicleFeatures/toggleActive/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicleFeatures/toggleActive/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicleFeatures",
 								"toggleActive",
@@ -2149,12 +2305,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/vehicleFeatures/changeData/1",
-							"protocol": "http",
+							"raw": "https://pikuber.up.railway.app/vehicleFeatures/changeData/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"pikuber",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3001",
 							"path": [
 								"vehicleFeatures",
 								"changeData",
