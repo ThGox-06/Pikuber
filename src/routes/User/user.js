@@ -29,6 +29,7 @@ users.post('/newUser', async (req, res) => {
       documentImage,
       documentType,
       email,
+      password,
       gender,
       phone,
       phoneWhatsapp,
@@ -50,6 +51,7 @@ users.post('/newUser', async (req, res) => {
         documentImage,
         documentType,
         email,
+        password,
         gender,
         phone,
         phoneWhatsapp,
@@ -74,7 +76,7 @@ users.get('/allUsers', async (req, res) => {
       where: {
         active: true
       },
-      attributes: ['id', 'cityId', 'internationalCodeId', 'creationDate', 'avatar', 'name', 'lastname', 'birthday', 'documentNumber', 'documentImage', 'documentType', 'email', 'gender', 'phone', 'phoneWhatsapp', 'verifiedUser'],
+      attributes: ['id', 'cityId', 'internationalCodeId', 'creationDate', 'avatar', 'name', 'lastname', 'birthday', 'documentNumber', 'documentImage', 'documentType', 'email', 'password', 'gender', 'phone', 'phoneWhatsapp', 'verifiedUser'],
       include: [
         {
           model: Cities,
@@ -106,7 +108,7 @@ users.get('/usersById/:id', async (req, res) => {
         active: true,
         id: parseInt(id, 10),
       },
-      attributes: ['id', 'cityId', 'internationalCodeId', 'creationDate', 'avatar', 'name', 'lastname', 'birthday', 'documentNumber', 'documentImage', 'documentType', 'email', 'gender', 'phone', 'phoneWhatsapp', 'verifiedUser'],
+      attributes: ['id', 'cityId', 'internationalCodeId', 'creationDate', 'avatar', 'name', 'lastname', 'birthday', 'documentNumber', 'documentImage', 'documentType', 'email', 'password', 'gender', 'phone', 'phoneWhatsapp', 'verifiedUser'],
       include: [
         {
           model: Cities,
@@ -163,6 +165,7 @@ users.put('/changeData/:id', async (req, res) => {
       avatar,
       documentImage,
       email,
+      password,
       gender,
       phone,
       phoneWhatsapp,
@@ -180,6 +183,7 @@ users.put('/changeData/:id', async (req, res) => {
         avatar,
         documentImage,
         email,
+        password,
         gender,
         phone,
         phoneWhatsapp,
