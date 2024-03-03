@@ -50,6 +50,7 @@ const {
   Advertisements,
   BaseRates, 
   Cities,
+  Commissions,
   Countries,
   Fleets,
   InternationalCodes,
@@ -74,6 +75,9 @@ BaseRates.belongsTo(Vehicles);
 // CITY
 States.hasMany(Cities);
 Cities.belongsTo(States);
+// COMMISSION
+Vehicles.hasMany(Commissions);
+Commissions.belongsTo(Vehicles);
 // COUNTRY (has no connections)
 // FLEET
 Pilots.hasMany(Fleets);
